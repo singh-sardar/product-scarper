@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top 10 smartwatch tondi</title>
+<link rel="stylesheet" href="../shared/dashboard.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Top 10 smartwatch tondi per l’uomo</h1>
+    <p>Per il tuo Nothing Phone, ordinati dal più adatto a chi vuole spendere intorno agli 80 €. Clicca un orologio per vederne le caratteristiche e il negozio più economico tra Amazon, Unieuro, MediaWorld ed Euronics.</p>
+    <p>Dati aggiornati al <strong id="updated"></strong>.</p>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>
+    <p><strong>Come leggere i prezzi.</strong> I prezzi sono quelli letti il 13 novembre 2026 direttamente sulle pagine prodotto dei negozi. Cambiano spesso: controlla sempre il prezzo sulla pagina del negozio prima di acquistare. I prezzi in grigio sono offerte passate viste in articoli di cui non conosco la data, quindi non li conto come “più economico”.</p>
+    <p><strong>Link.</strong> Ogni link porta alla pagina del prodotto sul sito del negozio. Il prezzo può cambiare con il colore: nella nota c’è il colore a cui si riferisce. Su Amazon e MediaWorld il venditore può essere un negozio terzo.</p>
+    <p><strong>Foto.</strong> Le foto sono caricate dal sito di Unieuro (per lo Huawei Watch GT 5 da Amazon) ogni volta che apri il file, quindi serve la connessione. Con i pulsanti “Precedente” e “Successiva” scorri tutte le foto della pagina del negozio. Sotto ogni foto c’è il link alla pagina da cui viene. Per lo Xiaomi Watch 2 non ho trovato una foto su una pagina di negozio verificata.</p>
+    <p><strong>Cosa non so.</strong> Dove una caratteristica è “n.d.” non ho trovato una fonte affidabile. Su MediaWorld non ho trovato un prezzo per tutti i modelli.</p>
+  </footer>
+</div>
+
+<script>
+  var CONFIG = {
+    noun: "orologi", one: "un orologio", budget: 80, filters: [100, 80],
+    columns: [["Cassa", "cassa"], ["Autonomia", "autonomia"]],
+    best: { key: "autonomia", higher: true, text: "l’autonomia più lunga" }
+  };
+
+  var W = [
+    {
+      id: "cmf3pro", photo: "https://www.unieuro.it/medias/sys_master/root/hb4/hf5/51635630440478/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7ba1b75376394ed41dce005040d67db3-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/CMF-Watch-3-Pro-pidNTHWATCH3LG", rank: 1, name: "CMF Watch 3 Pro", brand: "Nothing (CMF)", year: 2025, month: 7,
+      short: { cassa: "47 mm", autonomia: "13 gg" },
+      specs: [["Display", "1,43 pollici AMOLED, 466×466"], ["Cassa", "47 mm, Alluminio"], ["Autonomia", "Fino a 13 giorni (4–5 con always-on)"], ["GPS", "Dual-band"],
+        ["NFC", "n.d."], ["Resistenza all’acqua", "IP68"], ["Modalità sport", "131"], ["Software", "Software Nothing, app Nothing X"]],
+      verdict: "La scelta più coerente con il tuo Nothing Phone e l’unico che si trova spesso vicino agli 80 €.",
+      pros: ["Display grande e luminoso", "GPS dual-band", "Chiamate Bluetooth", "Si abbina allo stile Nothing"],
+      cons: ["Listino salito a 99 € rispetto al modello precedente", "Software chiuso, niente app aggiuntive", "Cornice fissa"],
+      offers: [
+        { store: "Amazon", price: 81.99, fresh: true, url: "https://www.amazon.it/dp/B0F66VB1SV", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Amazon. Modello controllato sulla scheda Amazon. Colore Light Grey." },
+        { store: "Unieuro", price: 91.99, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/CMF-Watch-3-Pro-pidNTHWATCH3LG", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, esaurito online" },
+        { store: "Euronics", price: 99.90, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/nothing---cmf-watch-pro-3-light-grey/252012064.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026. Colore Light Grey." },
+        { store: "MediaWorld", price: 92.49, fresh: true, url: "https://www.mediaworld.it/it/product/_nothing-cmf-watch-pro-3-light-grey-594207.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 (su MediaWorld può essere un venditore terzo). Colore Light Grey." }
+      ]
+    },
+    {
+      id: "active2", photo: "https://www.unieuro.it/medias/sys_master/root/hd7/hd9/50557244604446/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-78a71f88149a9084958b0d3772bf61e1-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Active-2-pidAMFIACTIVE2R", rank: 2, name: "Amazfit Active 2 (Round)", brand: "Amazfit", year: 2025, month: 1,
+      short: { cassa: "44 mm", autonomia: "10 gg" },
+      specs: [["Display", "1,32 pollici AMOLED, 466×466, 2.000 nit"], ["Cassa", "44 mm, Lunetta in acciaio"], ["Autonomia", "Fino a 10 giorni"], ["GPS", "5 sistemi satellitari, mappe offline"],
+        ["NFC", "Solo versione Premium"], ["Resistenza all’acqua", "5 ATM"], ["Modalità sport", "160+"], ["Software", "Zepp OS 4.5"]],
+      verdict: "Il più completo per lo sport in questa fascia, ma oggi costa 99,90 € ed è esaurito. In passato è sceso sotto 80 € in offerta.",
+      pros: ["Mappe offline", "Oltre 160 sport", "Display molto luminoso", "Cassa con lunetta in acciaio"],
+      cons: ["La versione standard non ha vetro zaffiro né NFC", "Il prezzo oscilla molto da un periodo all’altro"],
+      offers: [
+        { store: "Unieuro", price: 99.90, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Active-2-pidAMFIACTIVE2R", note: "[prima: 99.99 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026, esaurito online." },
+        { store: "Amazon", price: 97.99, fresh: false, url: "https://www.amazon.it/dp/B0DT3YNMBX", note: "Il 12 novembre 2026 la pagina Amazon non mostrava un prezzo per il nuovo (l’11 novembre c’era solo l’offerta “Seconda mano” a 96,80 €). 97,99 € è un prezzo di giugno 2026." },
+        { store: "Euronics", price: 89.90, fresh: false, url: "https://www.euronics.it/telefonia/wearable/smartwatch/amazfit---smartwatch-active-2-round-black/252001218.html", note: "Prezzo letto l’12 novembre 2026 sulla pagina del prodotto, ma risulta esaurito. Colore nero." }
+      ]
+    },
+    {
+      id: "active2p", photo: "https://www.unieuro.it/medias/sys_master/root/h1d/h83/50769980588062/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c569c4c0a906bdd2d74681a571bca3c5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Active-2-Round-Premium-secondo-cinturino-rosso-in-silicone-Vetro-zaffiro-con-display-AMOLED-Pagamento-contactless-Durata-della-batteria-fino-a-10-giorni-5-sistemi-satellitari--mappe-offline-pidAMFACTIVE2RPR", rank: 3, name: "Amazfit Active 2 Premium (Round)", brand: "Amazfit", year: 2025, month: 1,
+      short: { cassa: "44 mm", autonomia: "10 gg" },
+      specs: [["Display", "1,32 pollici AMOLED, 466×466, vetro zaffiro"], ["Cassa", "44 mm, Acciaio inox"], ["Autonomia", "Fino a 10 giorni"], ["GPS", "5 sistemi satellitari, mappe offline"],
+        ["NFC", "Sì (Zepp Pay)"], ["Resistenza all’acqua", "5 ATM"], ["Modalità sport", "160+"], ["Software", "Zepp OS 4.5"]],
+      verdict: "Come l’Active 2 ma con zaffiro, pagamenti NFC e secondo cinturino. Oggi il prezzo più basso è 109 € su Unieuro ed Euronics.",
+      pros: ["Vetro zaffiro", "Pagamenti contactless", "Cinturino extra incluso"],
+      cons: ["Fuori dai 80 €", "L’NFC può non funzionare con tutte le banche italiane"],
+      offers: [
+        { store: "Amazon", price: 109.00, fresh: true, url: "https://www.amazon.it/dp/B0DSPVK9QJ", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Amazon. Modello Active 2 NFC con titolo controllato sulla scheda Amazon" },
+        { store: "Unieuro", price: 109.00, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Active-2-Round-Premium-secondo-cinturino-rosso-in-silicone-Vetro-zaffiro-con-display-AMOLED-Pagamento-contactless-Durata-della-batteria-fino-a-10-giorni-5-sistemi-satellitari--mappe-offline-pidAMFACTIVE2RPR", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026. Pochi pezzi disponibili." },
+        { store: "MediaWorld", price: 145.89, fresh: true, url: "https://www.mediaworld.it/it/product/_smartwatch-amazfit-active-2-round-premium-nfc-nero-155730124.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 , venduto da EPTO (venditore terzo). Colore nero." },
+        { store: "Euronics", price: 109.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/amazfit---smartwatch-active-2-round-premium-ed-blackred/252001298.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026. Colore Black/Red." }
+      ]
+    },
+    {
+      id: "active3p", photo: "https://www.unieuro.it/medias/sys_master/root/hb3/h63/51783873658910/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-73deb20917c83fb64b3986754681f5b7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Active-3-pidAMFACTIVE3PREMBG", rank: 4, name: "Amazfit Active 3 Premium", brand: "Amazfit", year: 2026, month: 2,
+      short: { cassa: "45 mm", autonomia: "12 gg" },
+      specs: [["Display", "1,32 pollici AMOLED, 466×466, vetro zaffiro"], ["Cassa", "45 mm, Acciaio"], ["Autonomia", "Fino a 12 giorni"], ["GPS", "6 sistemi satellitari, mappe offline"],
+        ["NFC", "Sì"], ["Resistenza all’acqua", "5 ATM"], ["Modalità sport", "n.d."], ["Software", "Zepp OS, coach Zepp Coach"]],
+      verdict: "Il successore dell’Active 2: sensori migliori, ma costa molto di più.",
+      pros: ["Sensori migliorati", "Zaffiro e acciaio", "Mappe offline", "Piani di corsa con Zepp Coach"],
+      cons: ["Prezzo di listino circa il 70% più alto del modello precedente", "Più grande del predecessore"],
+      offers: [
+        { store: "Amazon", price: 131.49, fresh: true, url: "https://www.amazon.it/dp/B0GJZH9V76", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Amazon. Modello controllato sulla scheda Amazon" },
+        { store: "MediaWorld", price: 131.49, fresh: true, url: "https://www.mediaworld.it/it/product/_amazfit-active-3-premium-atlas-blue-572064.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 (su MediaWorld può essere un venditore terzo). Colore Atlas Blue." },
+        { store: "Euronics", price: 152.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/amazfit---smartwatch-active-3-premium-apex-silver/262002035.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026" },
+        { store: "Unieuro", price: 149.00, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Active-3-pidAMFACTIVE3PREMBG", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026" }
+      ]
+    },
+    {
+      id: "s5", photo: "https://www.unieuro.it/medias/sys_master/root/h6b/h69/61611047321630/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-bad9a7f814dc22385e108af01fa22901-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Watch-S5-pidXIAWATCHS546SL", rank: 5, name: "Xiaomi Watch S5 (46 mm)", brand: "Xiaomi", year: 2026, month: 5,
+      short: { cassa: "46 mm", autonomia: "21 gg" },
+      specs: [["Display", "1,48 pollici AMOLED, 480×480"], ["Cassa", "46 mm, Acciaio inox"], ["Autonomia", "Fino a 21 giorni dichiarati (815 mAh)"], ["GPS", "Dual-band"],
+        ["NFC", "Fonti discordanti"], ["Resistenza all’acqua", "5 ATM"], ["Modalità sport", "n.d."], ["Software", "HyperOS (niente app aggiuntive)"]],
+      verdict: "Autonomia eccezionale e ottimi materiali. Conviene soprattutto se lo trovi intorno ai 150 €.",
+      pros: ["Batteria molto lunga", "Cassa in acciaio", "GPS dual-band"],
+      cons: ["Funzioni sportive più limitate", "Secondo TuttoTech manca l’NFC", "Fuori budget"],
+      offers: [
+        { store: "Amazon", price: 139.00, fresh: true, url: "https://www.amazon.it/dp/B08N65WJVL", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Xiaomi EU, spedito da Amazon. Modello controllato sulla scheda Amazon. Colore argento." },
+        { store: "Unieuro", price: 149.99, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Watch-S5-pidXIAWATCHS546SL", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 (versione argento, a 146 € il 9 novembre)" },
+        { store: "MediaWorld", price: 139.00, fresh: true, url: "https://www.mediaworld.it/it/product/_xiaomi-watch-s5-46mm-silver-583171.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 (su MediaWorld può essere un venditore terzo) (versione argento)" },
+        { store: "Euronics", price: 179.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/xiaomi---smartwatch-watch-s5-46mm-black/262005194.html", note: "[prima: 164.00 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026 (versione nera)" }
+      ]
+    },
+    {
+      id: "activemax", photo: "https://www.unieuro.it/medias/sys_master/root/hee/hb8/51234178301982/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-77c4b33ba79ddddfe1a3a63b406c8dc7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Active-Max-display-ultra-luminoso-da-15-pollici-4-GB-di-memoria-mappe-offline-monitoraggio-dellenergia-BioCharge-pidAMFACTIVEMAXB", rank: 6, name: "Amazfit Active Max", brand: "Amazfit", year: 2025, month: 12,
+      short: { cassa: "48 mm", autonomia: "20 gg" },
+      specs: [["Display", "1,5 pollici AMOLED"], ["Cassa", "48 mm, n.d."], ["Autonomia", "20–25 giorni a seconda della fonte"], ["GPS", "Mappe offline, 4 GB di memoria"],
+        ["NFC", "Sì"], ["Resistenza all’acqua", "n.d."], ["Modalità sport", "n.d."], ["Software", "Zepp OS"]],
+      verdict: "Il migliore per rapporto qualità-prezzo tra gli sportivi, secondo TuttoTech, ma è grosso e costa oltre 140 €.",
+      pros: ["Autonomia molto lunga", "Costruzione solida", "Mappe offline e NFC"],
+      cons: ["GPS non sempre precisissimo", "Dimensioni importanti", "Fuori budget"],
+      offers: [
+        { store: "Amazon", price: 152.00, fresh: true, url: "https://www.amazon.it/dp/B0G1ZGK7MV", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Amazon. Modello controllato sulla scheda Amazon" },
+        { store: "Euronics", price: 152.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/amazfit---smartwatch-active-max-black/252014913.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026" },
+        { store: "Unieuro", price: 149.00, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Active-Max-display-ultra-luminoso-da-15-pollici-4-GB-di-memoria-mappe-offline-monitoraggio-dellenergia-BioCharge-pidAMFACTIVEMAXB", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026" }
+      ]
+    },
+    {
+      id: "watch2", rank: 7, name: "Xiaomi Watch 2", brand: "Xiaomi", year: 2024, month: 2,
+      short: { cassa: "46 mm", autonomia: "n.d." },
+      specs: [["Display", "1,43 pollici AMOLED"], ["Cassa", "46 mm, n.d."], ["Autonomia", "n.d."], ["GPS", "n.d."],
+        ["NFC", "n.d."], ["Resistenza all’acqua", "n.d."], ["Modalità sport", "n.d."], ["Software", "Wear OS (app dal Play Store)"]],
+      verdict: "Se vuoi Wear OS e le app di Google: oggi 99,99 € su Amazon. Dati tecnici incompleti: controlla la scheda sul negozio.",
+      pros: ["Wear OS: si installano app dal Play Store"],
+      cons: ["Modello del 2024", "Fuori budget", "Ho pochi dati tecnici verificati"],
+      offers: [
+        { store: "Amazon", price: 124.34, fresh: true, url: "https://www.amazon.it/dp/B0CTMTXNF9", note: "[prima: 131.02 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Genialpix (venditore terzo, non Amazon). Modello controllato sulla scheda Amazon. Colore argento; il nero costa di più." },
+        { store: "MediaWorld", price: 187.52, fresh: true, url: "https://www.mediaworld.it/it/product/_smartwatch-xiaomi-watch-2-argento-144935337.html", note: "[prima: 188.04 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da MORELE.NET (venditore terzo). Colore argento." }
+      ]
+    },
+    {
+      id: "balance", photo: "https://www.unieuro.it/medias/sys_master/root/h88/h59/50769832214558/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-44c2a3ea5c5e99668426a5f6af98051a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Balance-pidAMFBALANCESG", rank: 8, name: "Amazfit Balance", brand: "Amazfit", year: 2023, month: 9,
+      short: { cassa: "46 mm", autonomia: "n.d." },
+      specs: [["Display", "1,5 pollici AMOLED"], ["Cassa", "46 mm, n.d."], ["Autonomia", "n.d."], ["GPS", "n.d."],
+        ["NFC", "n.d."], ["Resistenza all’acqua", "n.d."], ["Modalità sport", "n.d."], ["Software", "Zepp OS"]],
+      verdict: "Modello del 2023, superato dal Balance 2. Ha senso solo a prezzo molto basso.",
+      pros: ["Display grande"],
+      cons: ["Generazione precedente", "Ho pochi dati tecnici verificati"],
+      offers: [
+        { store: "Amazon", price: 119.99, fresh: true, url: "https://www.amazon.it/dp/B0CDXLDB6B", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Amazon. Modello controllato sulla scheda Amazon" },
+        { store: "MediaWorld", price: 119.99, fresh: true, url: "https://www.mediaworld.it/it/product/_amazfit-balance-sunset-grey-194816.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 (su MediaWorld può essere un venditore terzo). Colore Sunset Grey." },
+        { store: "Euronics", price: 120.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/amazfit---smartwatch-balance-midnight-black/232010535.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026. Colore Midnight Black, esaurito." },
+        { store: "Unieuro", price: 119.00, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Balance-pidAMFBALANCESG", note: "[prima: 139.99 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026" }
+      ]
+    },
+    {
+      id: "gt5", photo: "https://m.media-amazon.com/images/I/8177mNUcHtL._AC_SL1500_.jpg", photoSrc: "https://www.amazon.it/dp/B0D9JX82RZ", rank: 9, name: "Huawei Watch GT 5 (46 mm)", brand: "Huawei", year: 2024, month: 9,
+      short: { cassa: "46 mm", autonomia: "14 gg" },
+      specs: [["Display", "1,43 pollici AMOLED, 466×466"], ["Cassa", "46 mm, Acciaio inox"], ["Autonomia", "Fino a 14 giorni (circa 9 con uso normale)"], ["GPS", "Sì"],
+        ["NFC", "Sì"], ["Resistenza all’acqua", "5 ATM"], ["Modalità sport", "n.d."], ["Software", "HarmonyOS, app Huawei Health"]],
+      verdict: "Classico, elegante e con batteria lunga. Oggi a 122,50 € su Amazon; su MediaWorld costa 169,90 €, su Euronics è esaurito.",
+      pros: ["Cassa in acciaio, look da orologio classico", "Autonomia fino a 14 giorni", "Su Amazon a 122,50 €, il prezzo più basso"],
+      cons: ["Su Android l’app Huawei Health non è sul Play Store: si installa da AppGallery", "Non si installano app come su Wear OS", "Fuori dagli 80 €"],
+      offers: [
+        { store: "Amazon", price: 122.50, fresh: false, url: "https://www.amazon.it/dp/B0D9JX82RZ", note: "Il 12 novembre 2026 su Amazon c’era solo l’offerta “Usato – Molto buono” (116,38 €), nessun prezzo per il nuovo. 122,50 € è il prezzo del nuovo letto l’11 novembre (offerta Early Black Friday), non più verificabile." },
+        { store: "MediaWorld", price: 152.24, fresh: true, url: "https://www.mediaworld.it/it/product/_huawei-watch-gt-5-46mm-black-411593.html", note: "[prima: 162.02 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026 (su MediaWorld può essere un venditore terzo). Colore nero." },
+        { store: "Euronics", price: 207.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/huawei---smartwatch-gt5-(46mm)-nero-fluoroelastomero/252003867.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, esaurito." }
+      ]
+    },
+    {
+      id: "gw8", photo: "https://www.unieuro.it/medias/sys_master/root/h09/h73/50774207725598/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c2f2c3de8918ead5506676fe09ada9d9-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Smartwatch/Galaxy-Watch-8-Bluetooth-44mm-pidSAMSML330NZSAITV", rank: 10, name: "Samsung Galaxy Watch8 (44 mm)", brand: "Samsung", year: 2025, month: 7,
+      short: { cassa: "44 mm", autonomia: "~2 gg" },
+      specs: [["Display", "1,5 pollici"], ["Cassa", "44 mm, n.d."], ["Autonomia", "Più corta degli altri (è il suo limite principale)"], ["GPS", "n.d."],
+        ["NFC", "n.d."], ["Resistenza all’acqua", "n.d."], ["Modalità sport", "n.d."], ["Software", "Wear OS, Galaxy AI"]],
+      verdict: "Un riferimento per Wear OS, ma è un’altra fascia di prezzo. Lo metto per confronto.",
+      pros: ["Display bellissimo", "Software curato e ricco"],
+      cons: ["Autonomia limitata", "Costa più del triplo del tuo budget"],
+      offers: [
+        { store: "Amazon", price: 249.00, fresh: true, url: "https://www.amazon.it/dp/B0FBH34TNZ", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026, venduto da Amazon. Modello controllato sulla scheda Amazon. Versione italiana, Dark Gray." },
+        { store: "MediaWorld", price: 249.00, fresh: true, url: "https://www.mediaworld.it/it/product/_smartwatch-samsung-galaxy-watch8-44mm-bt-graphite-456351.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026 (su MediaWorld può essere un venditore terzo)" },
+        { store: "Unieuro", price: 362.00, fresh: true, url: "https://www.unieuro.it/online/Smartwatch/Galaxy-Watch-8-Bluetooth-44mm-pidSAMSML330NZSAITV", note: "[prima: 409.90 € il 12 novembre] Pagina del prodotto, prezzo letto il 13 novembre 2026. Pochi pezzi disponibili." },
+        { store: "Euronics", price: 279.00, fresh: true, url: "https://www.euronics.it/telefonia/wearable/smartwatch/samsung---galaxy-watch8-44mm-bt-232gb-graphite/252008925.html", note: "Pagina del prodotto, prezzo letto il 13 novembre 2026. Colore Graphite." }
+      ]
+    }
+  ];
+
+  // Galleria completa della pagina del negozio (la prima è la foto principale).
+  var GALLERY = {
+    cmf3pro: [
+      "https://www.unieuro.it/medias/sys_master/root/hb4/hf5/51635630440478/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7ba1b75376394ed41dce005040d67db3-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    active2: [
+      "https://www.unieuro.it/medias/sys_master/root/hd7/hd9/50557244604446/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-78a71f88149a9084958b0d3772bf61e1-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h5b/h38/50557396811806/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-3444ff763afc45b2aaf18140793a41b4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h70/h78/50557402054686/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-9dad01378797717a8a98f8adde8b0048-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha8/h9a/50557259808798/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-3c03c6959285abcf650a310a1b8393a3-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h12/h09/50557401006110/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-59a96911abcc8c3f1ce0c1692b7ae76b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9e/hf6/50557438853150/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-2a93f90d49306a15459a455f3a2d08be-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd8/hd9/50557399433246/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-e42445a0a99a7d6f9356af3907854b16-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h62/hca/50557287137310/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d70e30e35618bbdd3c1792a1db715834-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h5b/hd5/50557379641374/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-704f712f97bfae4902e14bf93595e0ff-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    active2p: [
+      "https://www.unieuro.it/medias/sys_master/root/h1d/h83/50769980588062/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c569c4c0a906bdd2d74681a571bca3c5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h4b/h7c/50769918263326/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7d7cbeb8315c179992d607405e3f63f1-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hcc/h8e/50769996513310/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-76590cc970177af78006b576f6a47609-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hcb/h77/50770013945886/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-1dc7a64ec7775e5358e56e28412281cc-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h64/hcf/50769868521502/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-e3f8c81ee0aa4c531c822262afea8a42-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hbe/h15/50769966235678/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-41c1d08a9190471097b55f761dd33ae4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h92/hce/50769826447390/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d6676a44975e1ebd38cfd628b679d05f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd8/h41/50769892900894/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-186cdf84814b2fa35ec774f895cffd45-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h43/hd1/50769771397150/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-da779e2e74911488c9928d276161bf95-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h81/h22/50769851613214/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8ddc677193ea9e5b7fbb6a9c6cf1f73e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    active3p: [
+      "https://www.unieuro.it/medias/sys_master/root/hb3/h63/51783873658910/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-73deb20917c83fb64b3986754681f5b7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h6d/h5e/51783919730718/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a61de96eaed2b26868f35a49117ee7a4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h96/hba/51783972290590/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-524ef43932a83cd9e0eb6b88cdc1f591-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h60/h62/51783876608030/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-76a64e3b0fd21aa61c2028eeb8bc38a2-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h5b/h93/51783879295006/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-f3e16f8d9e791d58c66e85a4469fe738-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hfe/h75/51783887290398/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-2755f4f1e3dd361dded1579370105649-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hdc/h75/51783987691550/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-827762557c589b7413379b457fa49153-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h7f/hf0/51783909769246/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-90c9fc48808a13277165c5a7f77b77b3-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha7/ha3/51783898365982/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-05611e91b30f348501e3b21c8290bc29-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb7/h41/51783839973406/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-85386d0a27f2da22cb2d07515275c376-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h84/h62/51783993327646/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-e54f0e4d62878c5078fdc9053325d90e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h5e/h14/51783912587294/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-35a4ae6d33ef13155aad5e70b81ea46b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h52/h7d/51783849541662/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5eb50971997eb4c925d786b972f33686-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h8f/h2f/51783883030558/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-30bd44110f973c5184829a34422af09e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb7/h5a/51783855505438/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-ee382383a4616ab17ff2245c67764725-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hc3/hc9/51783843119134/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-22d92377b476d6c6347b89f9e734b1ca-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h95/heb/51783854981150/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7c9c825028ac134849cc7b816cda07f7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hf5/hf0/51783877132318/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-0cb47ecb72c0f07315e5a19486e93364-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h4e/h44/51783913242654/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b2c058b37b883db194c3c337bd7391f2-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    s5: [
+      "https://www.unieuro.it/medias/sys_master/root/h6b/h69/61611047321630/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-bad9a7f814dc22385e108af01fa22901-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h06/hec/62174715510814/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-93e0f50c4e680398cc68a2022e4ffc20-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h8c/hd9/62174141579294/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-258ab96be7f1f7f220ec9d6055887522-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h15/h46/62174291951646/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-40e472f0900738de4a761f32c017aa34-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h28/hc1/62174483972126/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-9b8e81bfcd4be88bd1b400a70a1aa601-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h08/hc4/62174748737566/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-3d10d297304ef66aa7bef41ec0f1d3ca-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h0b/h4a/62174213177374/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-ca16c62ffe1a7acb828afcdfdb1b8f8f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    activemax: [
+      "https://www.unieuro.it/medias/sys_master/root/hee/hb8/51234178301982/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-77c4b33ba79ddddfe1a3a63b406c8dc7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd1/h21/51234164604958/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7edd4f0ff05e2a468d5c27e3736db83f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h84/h27/51234186690590/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-ad6e6f8d07da6b65bc5b7be8ad524718-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h2f/h55/51234160410654/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-1ebacaeee73051f2a982c151cf2a3943-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h6f/h08/51234163556382/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-e93f9182789c512c87daf698fe851a96-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h8e/h44/51234178826270/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-087d7c482fc7e08152c1f98284e7895f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hfa/hd8/51234145992734/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-effcff5554aad2892c869296b7170db5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h27/hca/51234170175518/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-96ec34ea8d2c0410c849a7e6ac210e0f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h38/h53/51234158837790/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-ed228336fe93cb4210be74b78c7139e5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h03/h80/51234229288990/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-919182cad1da4e916f06ead66a355117-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h67/h7e/51234179874846/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8d2c628af7bc686fba5118204a084480-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hde/he9/51234236694558/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-1f3674dfa911132db2beb79396578685-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha1/h0a/51234222800926/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-f2b48177c35d001ed025bbc4cfd0082b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h66/h1a/51234225553438/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4e18ddb8bf9d6cc08ce3bb9aab25b4bb-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h6a/h75/51234170699806/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5fe540f88a1cebae531b2a2794265ad6-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h12/h37/51234181971998/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4b53e730bb71f86dd6a85a3ab550c5ea-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he5/h3c/51234157723678/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4ca193afdc3a975c5e6d13e222e77ea0-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h38/he1/51234187214878/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-42eae7cd594cfd7c137e4e2e027e63dc-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h1e/h5a/51234237218846/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cff1cfff022df961a306f9864d915043-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hec/ha9/51234160934942/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d6de693688760c0123e723a1864dcd1b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9f/h65/51234151890974/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-9b66d0a6b4e87c5219c578f492fa5a59-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hed/h2a/51234231386142/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7bdf1b4382ea010dd7169435792b3b68-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9f/hc7/51234165129246/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-059de0adc01436b5c6ff3dbbff5bab2b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h1d/hd0/51234171813918/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b8cb99ed6cc08e9b1af301e5b06576da-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h1f/h1c/51234238267422/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-ffdc114fa6e12a069f30e81d79012ff0-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/haa/h4c/51234237743134/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cfe2368636b2dbe7aefbd8656182bd60-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h22/h26/51234162507806/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-17520cdaa80b49388ccf5951225b5a2c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h36/h6c/51234154512414/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-49c0f19fdfd2a2fed2e6fd1ee4ebfa9d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd5/h83/51234164080670/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5f1e419a27b188f3fde6116ffb93cdec-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h71/h97/51234236170270/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-58d9975b311fd245d6bcd1326865d330-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h95/hb8/51234180923422/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-24bfe2fe056f3c855c0dd4d2f806b6e9-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9b/h6b/51234146582558/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4824ae1e8f012bc800804988c0b98176-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb3/h86/51234145468446/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c66f0822298b84f47627b1f982d70a38-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h8a/ha8/51234188263454/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-23aaa5065e3b4fa1fb1174c012a78ebc-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h52/hfa/51234180399134/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-22ab7a4ed372423e021ac159a0a8e55f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h44/h1c/51234187739166/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-35d76c8f37202bef1bba7e17a4e3c6cc-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h79/h9e/51234166702110/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-3cc7e1011a353fbf9a719962560001a0-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h61/hd8/51234147106846/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b8a84402492d34fa301b3e20e1ca9822-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h2d/hb9/51234232959006/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-f12421ad90484fa49870dd377e16e31e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h61/hde/51234229813278/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-e5bb01439a8405ec51b580af1649714e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb5/h20/51234159886366/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-ee9207fd8e0c415b39869a2a1a95a1e0-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h07/h34/51234159362078/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d4e9a50182a420f03219075e97cf8208-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h4f/h4b/51234230337566/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c4e1b1a03e53ac0e94890e641bdbb2af-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha1/heb/51234230861854/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-812bf725e13c05bc8b9d150e4595f401-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h4d/h4c/51234163032094/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-13a1c04439b4fbe23c57a1d58da90cd4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h4f/h44/51234232434718/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-79181d8e81084600a9f09256e7c926e7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h52/h19/51234172338206/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-6a4862cf9d511633429f6bf3fc4a73eb-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he3/h2b/51234158247966/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-531040c07598f92e3fd33960e9769a20-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    balance: [
+      "https://www.unieuro.it/medias/sys_master/root/h88/h59/50769832214558/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-44c2a3ea5c5e99668426a5f6af98051a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h54/h13/50769916166174/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-2a82d22efb0d5a8ddf3e6e8cf3c7ab3b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h3c/hc3/50769767727134/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c69d1355f3d5ac16b6a33f4b23d367e7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    gt5: [
+      "https://m.media-amazon.com/images/I/8177mNUcHtL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71z-8OOR-ZL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Ge9x0XlLL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71X1-jV5YpL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71-EOZnC4iL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/7120jG0KXZL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Ivqmox6-L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71mvwHDdgtL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81cHRi3WBCL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71MHu1Rtu0L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81ZZXroIy0L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81pDGx-ghRL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81a9qef1B1L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81BabF31g8L._AC_SL1500_.jpg"
+    ],
+    gw8: [
+      "https://www.unieuro.it/medias/sys_master/root/h09/h73/50774207725598/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c2f2c3de8918ead5506676fe09ada9d9-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hf1/h9a/50531072344094/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7eda192bcccb898b388c3adb08e4672c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd9/h96/50530063286302/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d5114fa56f8942f6105bfa3db51abe0d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb6/h4e/49493533196318/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5de7a275ad5de74ce55db0a849f7967c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h99/h08/49493641887774/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7128db65374fca69ab09a1fb4193a2e1-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9b/h1f/49493702836254/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b4d7cb88e22142110ac3da9c183f7666-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he2/hd5/49493705654302/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-34438b6ec6b9c33810019021a768a421-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h15/h50/49493633171486/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4354b7af432c7c1e5e29e0f06bf64be1-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h5e/hd0/49493548367902/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a85cb978273a73b3a6fb58a644c84bd4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h86/h87/49493633761310/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-183991da732141bab8bf3f12671666fd-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ]
+  };
+
+  // Prezzo più basso verificato per giorno (scripts/storico.py).
+  var HISTORY = {
+    cmf3pro: [["2026-11-03", 72.37], ["2026-11-04", 72.37], ["2026-11-05", 72.37], ["2026-11-06", 81.90], ["2026-11-07", 81.90], ["2026-11-08", 81.89], ["2026-11-09", 80.90], ["2026-11-10", 80.90], ["2026-11-11", 81.90], ["2026-11-12", 81.99], ["2026-11-13", 81.99]],
+    active2: [["2026-11-03", 99.90], ["2026-11-04", 99.90], ["2026-11-05", 99.90], ["2026-11-06", 99.90], ["2026-11-08", 99.90], ["2026-11-09", 99.90], ["2026-11-10", 99.90], ["2026-11-11", 99.90], ["2026-11-12", 99.99], ["2026-11-13", 99.90]],
+    active2p: [["2026-11-03", 109.90], ["2026-11-04", 110.90], ["2026-11-05", 110.90], ["2026-11-06", 110.90], ["2026-11-07", 110.90], ["2026-11-08", 114.90], ["2026-11-09", 116.90], ["2026-11-10", 109.00], ["2026-11-11", 109.00], ["2026-11-12", 109.00], ["2026-11-13", 109.00]],
+    active3p: [["2026-11-03", 131.49], ["2026-11-04", 131.49], ["2026-11-05", 131.49], ["2026-11-06", 131.49], ["2026-11-07", 131.49], ["2026-11-08", 131.49], ["2026-11-09", 131.49], ["2026-11-10", 131.49], ["2026-11-11", 131.49], ["2026-11-12", 131.49], ["2026-11-13", 131.49]],
+    s5: [["2026-11-03", 147.00], ["2026-11-04", 147.00], ["2026-11-05", 146.99], ["2026-11-06", 146.00], ["2026-11-07", 146.00], ["2026-11-08", 146.00], ["2026-11-09", 146.00], ["2026-11-10", 146.00], ["2026-11-11", 145.99], ["2026-11-12", 139.00], ["2026-11-13", 139.00]],
+    activemax: [["2026-11-03", 149.00], ["2026-11-04", 149.00], ["2026-11-05", 145.90], ["2026-11-06", 146.90], ["2026-11-07", 146.90], ["2026-11-08", 153.90], ["2026-11-09", 154.90], ["2026-11-10", 149.00], ["2026-11-11", 149.00], ["2026-11-12", 149.00], ["2026-11-13", 149.00]],
+    watch2: [["2026-11-03", 125.52], ["2026-11-04", 125.52], ["2026-11-05", 126.40], ["2026-11-06", 128.23], ["2026-11-07", 128.23], ["2026-11-08", 131.26], ["2026-11-09", 128.18], ["2026-11-10", 128.18], ["2026-11-11", 99.99], ["2026-11-12", 131.02], ["2026-11-13", 124.34]],
+    balance: [["2026-11-03", 119.99], ["2026-11-04", 119.99], ["2026-11-05", 119.99], ["2026-11-06", 119.00], ["2026-11-07", 119.00], ["2026-11-08", 119.00], ["2026-11-09", 119.00], ["2026-11-10", 119.00], ["2026-11-11", 119.00], ["2026-11-12", 119.99], ["2026-11-13", 119.00]],
+    gt5: [["2026-11-03", 139.00], ["2026-11-04", 139.00], ["2026-11-05", 139.00], ["2026-11-06", 139.00], ["2026-11-07", 139.00], ["2026-11-08", 139.00], ["2026-11-09", 139.00], ["2026-11-10", 122.50], ["2026-11-11", 122.50], ["2026-11-12", 162.02], ["2026-11-13", 152.24]],
+    gw8: [["2026-11-03", 249.00], ["2026-11-04", 249.00], ["2026-11-05", 249.00], ["2026-11-06", 249.00], ["2026-11-07", 249.00], ["2026-11-08", 249.00], ["2026-11-09", 249.00], ["2026-11-10", 249.00], ["2026-11-11", 249.00], ["2026-11-12", 249.00], ["2026-11-13", 249.00]]
+  };
+
+  // Da cambiare a ogni aggiornamento dei dati.
+  var UPDATED = "13 novembre 2026";
+</script>
+<script src="../shared/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top 10 robot lavapavimenti</title>
+<link rel="stylesheet" href="../shared/dashboard.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Top 10 robot che aspirano e lavano i pavimenti</h1>
+    <p>Per una casa grande, anche su più piani, con budget intorno ai 150 €. Il lavaggio automatico dei panni a questo prezzo è raro: i primi tre lo hanno ma costano di più. Clicca un robot per vederne le caratteristiche e il negozio più economico tra Amazon, Unieuro, MediaWorld ed Euronics.</p>
+    <p>Dati aggiornati al <strong id="updated"></strong>.</p>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>
+    <p><strong>Come leggere i prezzi.</strong> I prezzi sono quelli letti il 14 novembre 2026 direttamente sulle pagine prodotto dei negozi. Cambiano spesso: controlla sempre il prezzo sulla pagina del negozio prima di acquistare.</p>
+    <p><strong>Link.</strong> Ogni link porta alla pagina del prodotto sul sito del negozio. Su Amazon e MediaWorld il venditore può essere un negozio terzo: nella nota c’è chi lo vende. Alcuni negozi usano codici diversi per lo stesso modello (es. Dreame D20VIU e D20VIM): la nota indica quale.</p>
+    <p><strong>Foto.</strong> Le foto sono caricate dal sito di Unieuro ogni volta che apri il file, quindi serve la connessione. Per MOVA E20 Plus, MOVA E20s Pro Plus, Roomba 105 Combo e Dreame F9 Pro non c’è una pagina Unieuro con foto.</p>
+    <p><strong>Cosa non so.</strong> Dove una caratteristica è “n.d.” non ho trovato una fonte affidabile: per diversi modelli non è chiaro se le mappe multipiano ci sono. Per alcuni modelli conosco solo l’anno di uscita.</p>
+  </footer>
+</div>
+
+<script>
+  var CONFIG = {"noun": "robot", "one": "un robot", "budget": 150, "filters": [300, 200], "columns": [["Aspirazione", "aspirazione"], ["Lavaggio", "lavaggio"]], "best": {"key": "aspirazione", "higher": true, "text": "l’aspirazione più alta"}};
+
+  var W = [
+    {
+      id: "roborockqr598", photo: "https://www.unieuro.it/medias/sys_master/root/h17/ha3/63517929209886/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-36a3700459406716724595e7c56e5a9f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Robot-Aspirapolvere/QR-598-robot-aspirapolvere-e-lavapavimenti-Nero-pidRCKCN41847", rank: 1, name: "Roborock QR 598", brand: "Roborock", year: 2025, month: null,
+      short: {"aspirazione": "8000 Pa", "lavaggio": "Base lava panni"},
+      specs: [["Aspirazione", "8000 Pa"], ["Lavaggio", "2 mop rotanti (200 giri/min), sollevamento 10 mm"], ["Lavaggio panni automatico", "Sì (lava e asciuga ad aria)"], ["Base", "Tutto-in-uno: autosvuotante (sacchetto 2,7 L), lavaggio e asciugatura panni, serbatoio 4 L"], ["Navigazione", "LiDAR PreciSense 360°"], ["Mappe multipiano", "Sì (fino a 4 piani)"], ["Autonomia", "180 min"], ["Serbatoio acqua", "80 ml nel robot + 4 L nella base"], ["Altezza", "96,5 mm"], ["App / assistenti", "App Roborock"]],
+      verdict: "È il robot con lavaggio automatico dei panni più vicino al budget: base tutto-in-uno, LiDAR e mappe fino a 4 piani, ideale per una casa grande su più livelli.",
+      pros: ["Base che lava e asciuga i panni e svuota la polvere", "Mappe multipiano fino a 4 livelli", "Panni sollevabili sui tappeti", "Autonomia 180 min"],
+      cons: ["Fuori budget: circa 100 € sopra i 150 €", "Aspirazione 8000 Pa, inferiore ai rivali Dreame e Mova", "Su Unieuro è esaurito"],
+      offers: [
+        { store: "Euronics", price: 249.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/roborock---robot-aspirapolvere-qr-598-b-bianco/252014758.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Colore bianco (QR 598 B). Disponibile." },
+        { store: "Unieuro", price: 249.00, fresh: true, url: "https://www.unieuro.it/online/Robot-Aspirapolvere/QR-598-robot-aspirapolvere-e-lavapavimenti-Nero-pidRCKCN41847", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Oggi risulta non disponibile online." },
+        { store: "Amazon", price: 378.27, fresh: true, url: "https://www.amazon.it/dp/B0F9212S7G", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026, venduto da ProComponentes (venditore terzo). Modello controllato sulla scheda Amazon." }
+      ]
+    },
+    {
+      id: "dreamed20ultra", photo: "https://www.unieuro.it/medias/sys_master/root/ha0/hb2/50647513333790/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a365fa8ff2390d82258308d4c200ace5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Robot-Aspirapolvere/D20VIU-Ultra-White-Versione-Italiana--Robot-aspirapolvere-e-lavapavimenti-con-auto-pulizia-e-auto-svuotamento-aspirazione-13-000-Pa-e-autonomia-fino-a-100-giorni-senza-manutenzione-pidDREVIUD20UWH", rank: 2, name: "Dreame D20 Ultra", brand: "Dreame", year: 2025, month: null,
+      short: {"aspirazione": "13000 Pa", "lavaggio": "Base lava panni"},
+      specs: [["Aspirazione", "13000 Pa"], ["Lavaggio", "2 mop rotanti DuoScrub + RoboSwing, sollevamento 10,5 mm"], ["Lavaggio panni automatico", "Sì (lava e asciuga con aria calda)"], ["Base", "PowerDock tutto-in-uno: autosvuotante (sacchetto 3,2 L), lavaggio e asciugatura mop"], ["Navigazione", "Laser (Smart Pathfinder) + 3DAdapt"], ["Mappe multipiano", "Sì (numero n.d.)"], ["Autonomia", "250–260 min"], ["Serbatoio acqua", "n.d."], ["Altezza", "97 mm"], ["App / assistenti", "App Dreamehome"]],
+      verdict: "Lavaggio e asciugatura ad aria calda dei mop, 13000 Pa e oltre 4 ore di autonomia: copre una casa grande su più piani senza ricariche, a circa 260 €.",
+      pros: ["Base che lava e asciuga i mop con aria calda", "13000 Pa di aspirazione", "Autonomia fino a 260 min", "Mappatura multipiano"],
+      cons: ["Fuori budget: circa 110 € sopra i 150 €", "Numero di mappe salvabili non indicato", "Codici diversi per negozio (D20VIU su Unieuro, D20VIM altrove)"],
+      offers: [
+        { store: "Unieuro", price: 259.90, fresh: true, url: "https://www.unieuro.it/online/Robot-Aspirapolvere/D20VIU-Ultra-White-Versione-Italiana--Robot-aspirapolvere-e-lavapavimenti-con-auto-pulizia-e-auto-svuotamento-aspirazione-13-000-Pa-e-autonomia-fino-a-100-giorni-senza-manutenzione-pidDREVIUD20UWH", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione D20VIU Ultra bianca. Disponibile." },
+        { store: "MediaWorld", price: 259.00, fresh: true, url: "https://www.mediaworld.it/it/product/_dreame-d20vim-ultra-aspirapolvere-robot-700-w-498590.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Versione D20VIM Ultra. Disponibile." },
+        { store: "Euronics", price: 259.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/dreame---aspirapolvere-robot-d20-ultra-vim-bianco/252011846.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione D20 Ultra VIM bianca. Disponibile." }
+      ]
+    },
+    {
+      id: "movae40ultra", photo: "https://www.unieuro.it/medias/sys_master/root/h21/h24/50647408672798/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8868164bbb0ed0e1e29f51c9de434459-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Robot-Aspirapolvere/E40VIU-Ultra-Versione-Italiana--Robot-aspirapolvere-e-lavapavimenti-con-aspirazione-19-000-Pa-tecnologia-MaxiReach-stazione-all-in-one-con-auto-svuotamento-e-asciugatura-ad-aria-calda-pidMVAMVVIUE40U", rank: 3, name: "MOVA E40 Ultra", brand: "MOVA", year: 2025, month: 7,
+      short: {"aspirazione": "19000 Pa", "lavaggio": "Base lava panni"},
+      specs: [["Aspirazione", "19000 Pa"], ["Lavaggio", "2 mop rotanti estensibili MaxiReach"], ["Lavaggio panni automatico", "Sì (lava e asciuga con aria calda)"], ["Base", "Tutto-in-uno: autosvuotante (sacchetto 3,2 L), serbatoi 4,5 L pulita / 4 L sporca"], ["Navigazione", "LDS (LiDAR) + laser a linea singola"], ["Mappe multipiano", "n.d."], ["Autonomia", "260 min"], ["Serbatoio acqua", "80 ml nel robot + 4,5 L nella base"], ["Altezza", "97 mm"], ["App / assistenti", "App MOVAhome, Alexa, Google Assistant"]],
+      verdict: "La più potente del gruppo: 19000 Pa, mop estensibili per i bordi e base che lava e asciuga i panni ad aria calda, con 260 min di autonomia per le case grandi.",
+      pros: ["19000 Pa, la più alta della lista", "Mop estensibili che arrivano a bordi e sotto i mobili", "Lavaggio e asciugatura ad aria calda dei panni", "Autonomia 260 min"],
+      cons: ["Fuori budget: circa 130 € sopra i 150 €", "Supporto multipiano non indicato sulle pagine dei negozi", "Codici diversi per negozio (E40VIU su Unieuro, E40VIM altrove)"],
+      offers: [
+        { store: "Euronics", price: 279.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/mova---robot-aspira-e-lava-e40-ultra-vim-bianco/252014442.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione E40 Ultra VIM bianca. Disponibile." },
+        { store: "Unieuro", price: 279.00, fresh: true, url: "https://www.unieuro.it/online/Robot-Aspirapolvere/E40VIU-Ultra-Versione-Italiana--Robot-aspirapolvere-e-lavapavimenti-con-aspirazione-19-000-Pa-tecnologia-MaxiReach-stazione-all-in-one-con-auto-svuotamento-e-asciugatura-ad-aria-calda-pidMVAMVVIUE40U", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione E40VIU Ultra. Disponibilità limitata (pochi pezzi)." },
+        { store: "MediaWorld", price: 279.00, fresh: true, url: "https://www.mediaworld.it/it/product/_mova-e40vim-ultra-aspirapolvere-robot-600-w-527493.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Versione E40VIM Ultra. Disponibile." },
+        { store: "Amazon", price: 278.99, fresh: true, url: "https://www.amazon.it/dp/B0FDLDM33M", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026, venduto e spedito da Amazon (nuovo). Bianco. Modello controllato sulla scheda Amazon." }
+      ]
+    },
+    {
+      id: "dreamed20plus", photo: "https://www.unieuro.it/medias/sys_master/root/h03/h6b/49734017122334/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b98c5ef5164cd29adb997a58b23a8d8d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Robot-Aspirapolvere/D20-Plus-pidDRED20PLUS", rank: 4, name: "Dreame D20 Plus", brand: "Dreame", year: 2025, month: null,
+      short: {"aspirazione": "13000 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "13000 Pa"], ["Lavaggio", "Panno con 32 livelli d'acqua"], ["Lavaggio panni automatico", "No"], ["Base", "Autosvuotante (sacchetto 5 L, fino a 150 giorni)"], ["Navigazione", "LiDAR D-ToF"], ["Mappe multipiano", "n.d."], ["Autonomia", "230–285 min (dati dei negozi)"], ["Serbatoio acqua", "n.d."], ["Altezza", "96,9 mm"], ["App / assistenti", "App Dreamehome, Alexa, Google Assistant"]],
+      verdict: "Il miglior compromesso vicino ai 150 €: 13000 Pa, LiDAR, base autosvuotante da 5 L e un'autonomia molto lunga adatta a una casa grande; il panno però va lavato a mano.",
+      pros: ["13000 Pa di aspirazione", "Autonomia lunga, adatta a case grandi", "Base autosvuotante con sacchetto da 5 L", "Venduto da tutti e tre i negozi"],
+      cons: ["Niente lavaggio automatico dei panni", "Lavaggio con panno semplice, non rotante", "Codici diversi per negozio (D20 Plus su Unieuro, D20VIM Plus altrove)"],
+      offers: [
+        { store: "MediaWorld", price: 179.00, fresh: true, url: "https://www.mediaworld.it/it/product/_dreame-d20vim-plus-aspirapolvere-robot-700-w-572992.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Versione D20VIM Plus. Disponibile." },
+        { store: "Euronics", price: 179.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/dreame---aspirapolvere-robot-d20vim-plus-bianco/262000764.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione D20VIM Plus bianca. Disponibile." },
+        { store: "Unieuro", price: 179.99, fresh: true, url: "https://www.unieuro.it/online/Robot-Aspirapolvere/D20-Plus-pidDRED20PLUS", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione D20 Plus bianca. Disponibile." }
+      ]
+    },
+    {
+      id: "roomba115combo", photo: "https://www.unieuro.it/medias/sys_master/root/had/hfd/63203781312542/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cda61a1561411b5812d5111696d81360-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Robot-Aspirapolvere/Roomba-115-Combo-pidIRO115W", rank: 5, name: "iRobot Roomba 115 Combo", brand: "iRobot", year: 2026, month: 4,
+      short: {"aspirazione": "15000 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "15000 Pa"], ["Lavaggio", "Panno in microfibra con SmartScrub"], ["Lavaggio panni automatico", "No"], ["Base", "Solo ricarica"], ["Navigazione", "LiDAR ClearView"], ["Mappe multipiano", "Sì (numero n.d.)"], ["Autonomia", "150 min"], ["Serbatoio acqua", "n.d."], ["Altezza", "78,9 mm"], ["App / assistenti", "App Roomba Home, Alexa, Google Assistant"]],
+      verdict: "Modello 2026 con LiDAR, mappe multipiano e 15000 Pa a 140 € (oggi in offerta); il più basso della lista (7,9 cm) per passare sotto i mobili.",
+      pros: ["Modello recente (2026)", "15000 Pa di aspirazione", "Mappatura su più piani", "Molto basso: 78,9 mm"],
+      cons: ["Niente lavaggio automatico dei panni", "Base di sola ricarica (la versione + Base autosvuotante costa di più)", "Lavaggio con panno semplice", "Secondo Amazon è pensato per case piccole o medie (fino a 84 m² per carica)"],
+      offers: [
+        { store: "Euronics", price: 160.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/irobot---aspirapolvere-lavapavimenti-2in1-roomba-115-combo-white/262008123.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione con base di sola ricarica, bianca. Disponibile." },
+        { store: "Unieuro", price: 140.00, fresh: true, flash: "Offerta lampo", until: "2026-11-16", url: "https://www.unieuro.it/online/Robot-Aspirapolvere/Roomba-115-Combo-pidIRO115W", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026: prezzo valido dal 14 al 16 novembre (prima 157 €, -10%). Versione con base di sola ricarica, bianca. Disponibile." },
+        { store: "Amazon", price: 140.00, fresh: true, url: "https://www.amazon.it/dp/B0GQVBWMN8", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026, venduto e spedito da Amazon (nuovo, -17% sul prezzo mediano di 169 €). Colore nero, senza base autosvuotante. Modello controllato sulla scheda Amazon." }
+      ]
+    },
+    {
+      id: "movae20sproplus", rank: 6, name: "MOVA E20s Pro Plus", brand: "MOVA", year: null, month: null,
+      short: {"aspirazione": "13000 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "13000 Pa"], ["Lavaggio", "Panno (aspira e lava insieme)"], ["Lavaggio panni automatico", "No"], ["Base", "Autosvuotante (sacchetto 4 L)"], ["Navigazione", "LiDAR + 3DAdapt"], ["Mappe multipiano", "n.d."], ["Autonomia", "135 min"], ["Serbatoio acqua", "245 ml"], ["Altezza", "96 mm"], ["App / assistenti", "App MOVAhome, controllo vocale"]],
+      verdict: "13000 Pa, LiDAR e base autosvuotante a 159 €: ottimo rapporto qualità-prezzo in budget, ma senza lavaggio automatico dei panni.",
+      pros: ["Prezzo in budget (159 €)", "13000 Pa di aspirazione", "Base autosvuotante da 4 L", "Superamento ostacoli fino a 18 mm"],
+      cons: ["Niente lavaggio automatico dei panni", "Autonomia 135 min, giusta per una casa molto grande", "Supporto multipiano non indicato"],
+      offers: [
+        { store: "Euronics", price: 159.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/mova---aspirapolvere-robot-e20s-pro-plus-bianco/252015606.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Bianco. Disponibile." },
+        { store: "MediaWorld", price: 159.00, fresh: true, url: "https://www.mediaworld.it/it/product/_mova-e20s-pro-plus-aspirapolvere-robot-680-w-558761.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Disponibile." }
+      ]
+    },
+    {
+      id: "movae20plus", rank: 7, name: "MOVA E20 Plus", brand: "MOVA", year: 2025, month: null,
+      short: {"aspirazione": "5000 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "5000 Pa"], ["Lavaggio", "Panno, 3 livelli d'acqua"], ["Lavaggio panni automatico", "No"], ["Base", "Autosvuotante (sacchetto 4 L, fino a 90 giorni)"], ["Navigazione", "Laser (Pathfinder)"], ["Mappe multipiano", "Sì (3 mappe)"], ["Autonomia", "135 min"], ["Serbatoio acqua", "245 ml"], ["Altezza", "n.d."], ["App / assistenti", "App MOVAhome"]],
+      verdict: "Il più economico con base autosvuotante e 3 mappe salvabili, utile per una casa su più piani, ma l'aspirazione da 5000 Pa è modesta.",
+      pros: ["149 €, pieno budget", "Fino a 3 mappe per piani diversi", "Base autosvuotante da 4 L", "Zone senza mocio e confini virtuali"],
+      cons: ["Aspirazione 5000 Pa, bassa rispetto agli altri", "Niente lavaggio automatico dei panni", "Venduto solo da MediaWorld (non lo trovo su Unieuro)"],
+      offers: [
+        { store: "MediaWorld", price: 149.00, fresh: true, url: "https://www.mediaworld.it/it/product/_mova-e20-plus-aspirapolvere-robot-680-w-437686.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Bianco. Disponibile." }
+      ]
+    },
+    {
+      id: "ezvizre4", photo: "https://www.unieuro.it/medias/sys_master/root/h50/ha8/50500890066974/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-809ad08239fa1c1c9141c07378083238-preview-sgmConversionBaseFormat-sgmProductFormat.jpg", photoSrc: "https://www.unieuro.it/online/Robot-Aspirapolvere/RE4-robot-aspirapolvere-e-lavapavimenti-4-000-Pa-con-navigazione-LiDAR-pidEZVRE4", rank: 8, name: "EZVIZ RE4", brand: "EZVIZ", year: 2023, month: null,
+      short: {"aspirazione": "4000 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "4000 Pa"], ["Lavaggio", "Panno con serbatoio integrato"], ["Lavaggio panni automatico", "No"], ["Base", "Solo ricarica"], ["Navigazione", "LDS LiDAR"], ["Mappe multipiano", "n.d."], ["Autonomia", "240 min"], ["Serbatoio acqua", "300 ml"], ["Altezza", "n.d."], ["App / assistenti", "App EZVIZ, Alexa, Google Assistant"]],
+      verdict: "Autonomia dichiarata fino a 240 min e LiDAR a 150 €: copre case grandi in una sola carica, ma aspira poco e non ha base autosvuotante.",
+      pros: ["Autonomia fino a 240 min", "Navigazione LDS LiDAR", "Rileva i tappeti e li evita durante il lavaggio", "Alexa e Google Assistant"],
+      cons: ["Aspirazione 4000 Pa", "Niente base autosvuotante né lavaggio automatico dei panni", "Modello del 2023"],
+      offers: [
+        { store: "MediaWorld", price: 149.99, fresh: true, url: "https://www.mediaworld.it/it/product/_ezviz-re4-aspirapolvere-robot-45-w-394748.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Colore nero. Disponibile." },
+        { store: "Unieuro", price: 189.99, fresh: true, url: "https://www.unieuro.it/online/Robot-Aspirapolvere/RE4-robot-aspirapolvere-e-lavapavimenti-4-000-Pa-con-navigazione-LiDAR-pidEZVRE4", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Disponibile." },
+        { store: "Amazon", price: 149.34, fresh: true, url: "https://www.amazon.it/dp/B0CM92XCG2", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026, venduto da deltatecc (venditore terzo). Versione RE4 senza base autosvuotante. Modello controllato sulla scheda Amazon." }
+      ]
+    },
+    {
+      id: "roomba105combo", rank: 9, name: "iRobot Roomba 105 Combo", brand: "iRobot", year: 2025, month: 3,
+      short: {"aspirazione": "7000 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "7000 Pa"], ["Lavaggio", "Panno, 3 livelli d'acqua"], ["Lavaggio panni automatico", "No"], ["Base", "Solo ricarica"], ["Navigazione", "LiDAR ClearView"], ["Mappe multipiano", "n.d."], ["Autonomia", "75 min"], ["Serbatoio acqua", "200 ml"], ["Altezza", "104 mm"], ["App / assistenti", "App Roomba Home, Alexa, Siri, Google Assistant"]],
+      verdict: "LiDAR e marchio iRobot a 149 €, ma con 75 min di autonomia è adatto più a un appartamento che a una casa grande.",
+      pros: ["149 € con LiDAR", "Rileva ed evita i tappeti durante il lavaggio", "Compatibile con Alexa, Siri e Google"],
+      cons: ["Autonomia solo 75 min", "Niente base autosvuotante né lavaggio automatico dei panni", "Supporto multipiano non indicato"],
+      offers: [
+        { store: "MediaWorld", price: 149.00, fresh: true, url: "https://www.mediaworld.it/it/product/_irobot-roomba-105-combo-aspirapolvere-robot-120-w-428896.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Nell'offerta principale della pagina non è indicato un venditore terzo, ma su MediaWorld il venditore potrebbe essere terzo: verificare al momento dell'acquisto. Colore nero. Disponibile." },
+        { store: "Euronics", price: 149.00, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/irobot---aspirapolvere-robot-roomba-105/252003420.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. La pagina si chiama \"Roomba 105\" ma descrive il Roomba 105 Combo. Disponibile." }
+      ]
+    },
+    {
+      id: "dreamef9pro", rank: 10, name: "Dreame F9 Pro", brand: "Dreame", year: 2023, month: null,
+      short: {"aspirazione": "2500 Pa", "lavaggio": "Manuale"},
+      specs: [["Aspirazione", "2500 Pa"], ["Lavaggio", "Panno"], ["Lavaggio panni automatico", "No"], ["Base", "Solo ricarica"], ["Navigazione", "LiDAR (LDS)"], ["Mappe multipiano", "n.d."], ["Autonomia", "150 min"], ["Serbatoio acqua", "circa 240 ml"], ["Altezza", "n.d."], ["App / assistenti", "App Dreamehome"]],
+      verdict: "La scelta più economica con LiDAR (meno di 100 €), buona per iniziare, ma aspirazione e dotazione sono di base.",
+      pros: ["Meno di 100 €", "Navigazione LiDAR con mappa modificabile", "Autonomia 150 min"],
+      cons: ["Aspirazione solo 2500 Pa", "Niente base autosvuotante né lavaggio automatico dei panni", "Modello del 2023"],
+      offers: [
+        { store: "Euronics", price: 99.99, fresh: true, url: "https://www.euronics.it/elettrodomestici/pulizia--stiro-e-cucito/aspirapolvere-robot/dreame---aspirapolvere-robot-f9-pro-vm-combo-1-side-brush-bianco/232013272.html", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026. Versione \"F9 Pro VM Combo + 1 side brush\", bianca. Disponibile." },
+        { store: "Amazon", price: 139.99, fresh: true, url: "https://www.amazon.it/dp/B0CG5SSBM3", note: "Pagina del prodotto, prezzo letto il 14 novembre 2026, venduto da Conrad Italia (venditore terzo). Modello controllato sulla scheda Amazon." }
+      ]
+    }
+  ];
+
+  // Galleria completa della pagina del negozio (la prima è la foto principale).
+  var GALLERY = {
+    roborockqr598: [
+      "https://www.unieuro.it/medias/sys_master/root/h17/ha3/63517929209886/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-36a3700459406716724595e7c56e5a9f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h3c/hd4/63518342676510/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-e4b2d9cc2074a4bfa91c43c9c6fcd26e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h0e/h3c/63517947428894/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-85dffe14f307f99828bacdeb0a9ad2b0-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hff/h6e/63517974822942/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8583d8dd9e5dde98bc52eb309cc6446a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h4e/h56/63517965713438/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-3c49fa1adfdb885d12c66f228d9460d4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h13/h90/63518363648030/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-574382c74232afa4f9fe030ca23a8453-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he0/h60/63517926588446/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b4b9382fc2e59a150781e431003b7d81-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h96/hc5/63517936680990/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-39ce0d52af916f02524e9fde02898f6d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hea/h99/63517927112734/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-068b41e3b0db1f8ee4d79899c64052ff-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    dreamed20ultra: [
+      "https://www.unieuro.it/medias/sys_master/root/ha0/hb2/50647513333790/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a365fa8ff2390d82258308d4c200ace5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h0a/he5/50647381508126/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-23b526c8ce87e97da5cc103343bc98f4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha7/h5c/50647432134686/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8dee722a4a999f9ed5af2bbc02166a8b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he2/he3/50647385374750/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-96c1872385114c07dd68640670515672-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he9/h22/50647525195806/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-f4bf35c58b38b3042a460d776d4bb0c2-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h06/hf6/50647522017310/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-856df3a579c51182779e983ca559c18d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h66/h57/50647399563294/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5f3678c461198a7c006cd32c5e61fe02-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h60/hee/50647535812638/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-6be96948ad02d0c20da74f9af9f5fdb2-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/he0/h45/50647524671518/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-79e279fa64ca5ef2c949566ad42c4f2c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    movae40ultra: [
+      "https://www.unieuro.it/medias/sys_master/root/h21/h24/50647408672798/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8868164bbb0ed0e1e29f51c9de434459-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha9/hc9/50647428988958/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7e4fcae52206279fb7f44f18f1860193-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h18/hf3/50647464247326/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-46f3edc1fc6f0b0df9ec66b2f5745174-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h1d/h24/50647453335582/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-84f97ac0685967f37e8c6ceee1068f5c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h04/h51/50647446388766/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-21fffb8d06b6f0556fc978e6efc730f5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h7b/h8c/50647418011678/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-afa8024b1dafa05b3e9181f447167d9b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb3/h14/50647430037534/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-3489c8de39ba4bb5efd95746fb275145-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9f/h55/50647410376734/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4109f3f8aa75bdae608582641d7815d3-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h2a/h7a/50647447961630/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4e9b9205d97d3d53cce0faeb6ed4f7f7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h38/h6b/50647423090718/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-80218278b0dd4bcc60c19f70bb77a165-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h0e/h66/50647484301342/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-150376f2d7d441d0ac7014090096e4ce-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h30/h21/50647472832542/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8c2fce1a654c41715376a3db74d3e0fa-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    dreamed20plus: [
+      "https://www.unieuro.it/medias/sys_master/root/h03/h6b/49734017122334/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b98c5ef5164cd29adb997a58b23a8d8d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hf8/h23/49734039076894/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-2d78a00405900491c2db71d4602c5130-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h30/h14/49734026625054/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a72f588d4af5aaf4600e2f11f1fee195-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h57/h23/49734027673630/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5d23ad59b3b8db35633ed06edb85ed19-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/heb/h0e/49734015483934/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-6d3ddeac724d44b318b3a3d0ce6bd6fe-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h9d/h95/49734026035230/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-54786539f72eb0224487ad807284a1d4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h6b/hb5/49733766709278/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-17b71128627a38ff29b4b35db75f30b8-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb0/h16/49734002114590/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-94fe7746c9cab566e528e3a7953773a0-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h7d/h9a/49733769986078/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cbfbb3fb04fa9e93484ee98a2467da2f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb7/h90/49734028263454/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c004c5a8867b2d49e98e146fb01bba1a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hc5/h8c/49734036455454/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-472e2bbd3a0a7774a3f0ccf0d6e7468b-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hb5/h65/49733769461790/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c7021066e534301963d9b719e4d3487c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h7b/h33/49734018170910/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c5d3668883fa2a4f54a74fb2791e5c57-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha6/hc1/50789584240670/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d7a49ed37c6de8984f173023ffe9b1b9-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hf9/h89/49733979570206/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-6d05dc498e47f19b7f7efac4d583c4b8-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h0e/ha4/49734016598046/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8e646e35fa08cfffd532d34ce92a2a7d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h08/h8b/49734001590302/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cc9ea216797aaa583bcb4dce7a6d205a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hac/h79/49734009651230/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c84510e81fb6e199682214bd7b64b95e-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h2c/ha3/49734038028318/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b1ce2c019226bffda5a9523288b3eb14-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h3b/h6e/49733768937502/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-9a2f4a1ec26111cadcb669746bc97e9a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h74/h5e/49734016073758/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-49ddc7b89e2d1903fb1483a80a361dc8-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/haa/h04/49733980094494/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-46ea1c3915a5cafb0c014819d63de257-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h21/hce/49733981143070/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a211b9e964fce38c361603811d660a45-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    roomba115combo: [
+      "https://www.unieuro.it/medias/sys_master/root/had/hfd/63203781312542/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cda61a1561411b5812d5111696d81360-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h34/h81/63203765059614/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-19548a39d42db5fcf044f707523c0aa5-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd2/h0f/63203811983390/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7cdf7924171625deca4f69049b320ba6-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ],
+    ezvizre4: [
+      "https://www.unieuro.it/medias/sys_master/root/h50/ha8/50500890066974/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-809ad08239fa1c1c9141c07378083238-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd4/h1f/65539892445214/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a8fff43d222e059edd144ea83194f026-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hc1/hf6/65539846176798/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-dbd2f26a9da5667e51d143c65ebb4321-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h60/h6a/65539838312478/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-59e37e30ebcc48507dda8b7d44f11947-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hfa/h07/65539807772702/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d6bf9ec97d789b5801a7147728c2f341-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/ha9/h11/65539857711134/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-2d61c5099ac27e31f8eb0be02c5357de-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hd7/h77/65539722706974/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-48e6e65b6fd97fa3f820ab80837a3dac-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hf7/ha5/65539903651870/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-569e8bbdd2c280fb93daac2a5f9b536a-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/hfe/h8b/65539885039646/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-5c162d7bb9069940e53141c61f6e068f-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+      "https://www.unieuro.it/medias/sys_master/root/h95/ha4/65539849846814/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-8e25214ab3483a51a8eecd030eec47c4-preview-sgmConversionBaseFormat-sgmProductFormat.jpg"
+    ]
+  };
+
+  // Prezzo più basso verificato per giorno (scripts/storico.py).
+  var HISTORY = {
+    roborockqr598: [["2026-11-11", 249.00], ["2026-11-12", 249.00], ["2026-11-13", 249.00], ["2026-11-14", 249.00]],
+    dreamed20ultra: [["2026-11-11", 259.00], ["2026-11-12", 259.00], ["2026-11-13", 259.00], ["2026-11-14", 259.00]],
+    movae40ultra: [["2026-11-11", 279.00], ["2026-11-12", 279.00], ["2026-11-13", 279.00], ["2026-11-14", 278.99]],
+    dreamed20plus: [["2026-11-11", 179.00], ["2026-11-12", 179.00], ["2026-11-13", 179.00], ["2026-11-14", 179.00]],
+    roomba115combo: [["2026-11-11", 149.90], ["2026-11-12", 169.00], ["2026-11-13", 160.00], ["2026-11-14", 140.00]],
+    movae20sproplus: [["2026-11-11", 159.00], ["2026-11-12", 159.00], ["2026-11-13", 159.00], ["2026-11-14", 159.00]],
+    movae20plus: [["2026-11-11", 149.00], ["2026-11-12", 149.00], ["2026-11-13", 149.00], ["2026-11-14", 149.00]],
+    ezvizre4: [["2026-11-11", 149.34], ["2026-11-12", 149.34], ["2026-11-13", 149.34], ["2026-11-14", 149.34]],
+    roomba105combo: [["2026-11-11", 149.00], ["2026-11-12", 149.00], ["2026-11-13", 149.00], ["2026-11-14", 149.00]],
+    dreamef9pro: [["2026-11-11", 99.99], ["2026-11-12", 99.99], ["2026-11-13", 99.99], ["2026-11-14", 99.99]]
+  };
+
+  // Da cambiare a ogni aggiornamento dei dati.
+  var UPDATED = "14 novembre 2026";
+</script>
+<script src="../shared/dashboard.js"></script>
+</body>
+</html>
