@@ -3,12 +3,14 @@
 //   noun: "orologi", one: "un orologio",          // testi
 //   budget: 80, filters: [100, 80],               // linea tratteggiata e pulsanti "Sotto N €"
 //   columns: [["Cassa", "cassa"], ...],           // colonne della classifica, chiavi di w.short
-//   best: { key: "autonomia", higher: true, text: "l’autonomia più lunga" }  // evidenziato nel confronto
+//   best: { key: "autonomia", higher: true, text: "l’autonomia più lunga" }, // evidenziato nel confronto
+//   stores: "any"                                // facoltativo: negozi liberi invece dei quattro fissi
 // }
 (function () {
   var C = CONFIG;
   var TODAY = new Date().toLocaleDateString("sv"); // AAAA-MM-GG, ora locale
   var STORES = ["Amazon", "Unieuro", "MediaWorld", "Euronics"];
+  var ANY = C.stores === "any"; // categoria senza negozi fissi: si mostrano solo quelli con un'offerta
   var state = { filter: "all", sort: "rank", sel: W.slice().sort(function (a, b) { return a.rank - b.rank; })[0].id, cmp: [] };
 
   document.getElementById("app").innerHTML =
@@ -29,7 +31,7 @@
     '<button data-v="rank" aria-pressed="true">Scelta migliore</button><button data-v="price" aria-pressed="false">Prezzo</button></div></div></section>' +
     '<div class="layout"><div>' +
     '<section class="card" aria-labelledby="t-title"><div class="card-head"><h2 id="t-title">Classifica</h2>' +
-    '<p>Il prezzo è il più basso verificato tra i quattro negozi.</p></div>' +
+    '<p>Il prezzo è il più basso verificato tra ' + (ANY ? 'i negozi controllati' : 'i quattro negozi') + '.</p></div>' +
     '<div class="tablewrap"><table id="tbl"><thead><tr><th>#</th><th>Modello</th><th>Uscita</th>' +
     C.columns.map(function (c) { return "<th>" + c[0] + "</th>"; }).join("") +
     '<th class="num">Prezzo più basso</th><th>Negozio</th></tr></thead><tbody id="tbody"></tbody></table>' +
@@ -367,7 +369,7 @@
       }
       var cap = el("figcaption");
       cap.appendChild(el("span", "", "Passa il mouse per ingrandire, clicca per la vista espansa"));
-      var la = el("a", "", "Foto: pagina " + (/amazon\./.test(w.photoSrc) ? "Amazon" : "Unieuro"));
+      var la = el("a", "", "Foto: pagina " + (/amazon\./.test(w.photoSrc) ? "Amazon" : /euronics\./.test(w.photoSrc) ? "Euronics" : /mediaworld\./.test(w.photoSrc) ? "MediaWorld" : /unieuro\./.test(w.photoSrc) ? "Unieuro" : "del negozio"));
       la.href = w.photoSrc; la.target = "_blank"; la.rel = "noopener noreferrer";
       cap.appendChild(la);
       fig.appendChild(cap);
@@ -398,7 +400,7 @@
 
     var of = el("div", "offers");
     of.appendChild(el("h3", "", "Dove comprarlo"));
-    var sorted = STORES.map(function (s) {
+    var sorted = (ANY ? w.offers.map(function (x) { return x.store; }).filter(function (s, i, a) { return a.indexOf(s) === i; }) : STORES).map(function (s) {
       var o = w.offers.filter(function (x) { return x.store === s; })[0];
       return { store: s, o: o };
     }).sort(function (x, y) {

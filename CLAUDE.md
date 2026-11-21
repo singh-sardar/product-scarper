@@ -17,6 +17,7 @@ Formato di un prodotto in `W` (mantieni l'ordine `id, photo, photoSrc` all'inizi
 `id` solo lettere minuscole e cifre, senza trattini, perché diventa una chiave di `GALLERY` e `HISTORY`):
 `{ id, photo, photoSrc, rank, name, brand, year, month, short: {<chiavi di CONFIG.columns>}, specs: [[etichetta, valore], ...], verdict, pros, cons, offers: [...] }`.
 Ogni offerta: `{ store, price, fresh, url, note }` più, se a tempo, `flash` e `until`.
+Di norma i negozi sono i quattro qui sotto; una categoria con `CONFIG.stores = "any"` (es. `orologi-donna/`) accetta qualsiasi negozio online serio indicato nel suo BRIEF, con le stesse regole sui prezzi.
 
 Per vedere le pagine nel browser integrato avvia il server `ricerche` di `.claude/launch.json` (http://localhost:8791):
 aperte come file, nel browser integrato non caricano `shared/`.
