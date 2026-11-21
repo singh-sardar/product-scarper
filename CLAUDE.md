@@ -49,6 +49,7 @@ aperte come file, nel browser integrato non caricano `shared/`.
    Salva in `HISTORY` il prezzo più basso verificato di oggi (grafico "Andamento del prezzo più basso"). Non modificare `HISTORY` a mano.
 8. **Date.** Aggiorna `UPDATED` e la data nel paragrafo "Come leggere i prezzi" del footer.
 9. **Controllo.** Apri la pagina dal server locale e verifica che non ci siano errori in console.
+   Nelle attività programmate niente browser né server: `python3 -I scripts/controlla.py <categoria>/index.html` (10 prodotti, sintassi JS valida).
 10. **Resoconto.** In poche righe: prezzi cambiati, prodotti entrati/usciti e perché, offerte lampo trovate.
 
 ## Nuova categoria
