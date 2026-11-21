@@ -2,6 +2,7 @@
 
 - **Per chi:** ragazza giovane.
 - **Cosa:** i 10 migliori orologi **analogici "normali"** (non smartwatch), **color oro**, **quadrante bianco**.
+- **Cinturino:** **solo maglia milanese** color oro (richiesta dell'utente). Niente pelle, silicone, bracciali a maglie o estensibili.
 - **Escludi:** numeri romani sul quadrante (né tutti né in parte), quadranti madreperla/argento/champagne spacciati per bianco,
   smartwatch e ibridi, orologi da uomo o unisex grandi (cassa oltre ~38 mm).
 - **Budget:** intorno ai **70 €** (`CONFIG.budget`), filtri "Sotto 100 €" e "Sotto 70 €".
