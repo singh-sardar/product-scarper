@@ -11,7 +11,7 @@ confrontando i prezzi di Amazon, Unieuro, MediaWorld ed Euronics.
 - `<categoria>/BRIEF.md`: per chi è la ricerca, budget, criteri di scelta, cosa controllare sui modelli. **Leggilo prima di toccare la categoria.**
 - `scripts/gallerie.py`, `scripts/storico.py`: lavorano su qualsiasi `<categoria>/index.html` passato come argomento.
 
-Categorie: `orologi/`, `asciugatrici/`, `robot-lavapavimenti/`, `orologi-donna/`.
+Categorie: `orologi/`, `asciugatrici/`, `robot-lavapavimenti/`, `orologi-donna/`, `smartwatch-donna/`.
 
 Formato di un prodotto in `W` (mantieni l'ordine `id, photo, photoSrc` all'inizio: lo usa `gallerie.py`;
 `id` solo lettere minuscole e cifre, senza trattini, perché diventa una chiave di `GALLERY` e `HISTORY`):

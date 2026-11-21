@@ -44,7 +44,7 @@
     '<div class="cmpwrap" id="cmp"></div></section>';
 
   // Schede in cima a ogni ricerca: per una nuova categoria aggiungi qui [cartella, etichetta].
-  var CATS = [["orologi", "Smartwatch tondi"], ["asciugatrici", "Asciugatrici"], ["robot-lavapavimenti", "Robot lavapavimenti"], ["orologi-donna", "Orologi dorati ragazza"]];
+  var CATS = [["orologi", "Smartwatch tondi"], ["asciugatrici", "Asciugatrici"], ["robot-lavapavimenti", "Robot lavapavimenti"], ["orologi-donna", "Orologi dorati ragazza"], ["smartwatch-donna", "Smartwatch donna"]];
   var nav = document.createElement("nav");
   nav.className = "tabs"; nav.setAttribute("aria-label", "Ricerche");
   CATS.forEach(function (c) {
