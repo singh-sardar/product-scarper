@@ -104,7 +104,7 @@ header p { margin: 0; color: var(--muted); max-width: 70ch; }
 button:focus-visible, tr:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
 .layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(340px, .95fr); gap: 18px; align-items: start; }
-@media (max-width: 960px) { .layout { grid-template-columns: 1fr; } }
+@media (max-width: 960px) { .layout { grid-template-columns: minmax(0, 1fr); } }
 
 .card {
   background: var(--panel);
@@ -267,4 +267,20 @@ footer a { color: var(--accent); }
   .vbody { flex-direction: column; }
   .vthumbs { width: auto; display: flex; overflow-x: auto; }
   .vthumbs .thumb { width: 56px; height: 56px; }
+}
+
+/* Telefono */
+html { -webkit-text-size-adjust: 100%; }
+img, svg { max-width: 100%; }
+@media (max-width: 520px) {
+  .card-head { padding: 14px 14px 6px; }
+  .pc { padding: 12px 14px 4px; }
+  .photo { margin: 0 14px 4px; }
+  .photo .stage { height: 260px; }
+  .tabs a { padding: 9px 11px; font-size: 13px; }
+  table.cmp th[scope=row] { width: 96px; }
+  .offers { padding: 12px 14px 16px; }
+  .offer { grid-template-columns: 1fr auto; }
+  .offer .go { grid-column: 1 / -1; text-align: center; padding: 9px 12px; }
+  .offer .sn { min-width: 0; overflow-wrap: anywhere; }
 }
