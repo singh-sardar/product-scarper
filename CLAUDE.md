@@ -25,6 +25,8 @@ aperte come file, nel browser integrato non caricano `shared/`.
 ## Quando l'utente chiede "aggiorna i dati" di una categoria
 
 1. **Brief.** Leggi `<categoria>/BRIEF.md`.
+**Rilettura sempre completa.** Anche se `UPDATED` o `fresh: true` hanno già la data di oggi, rileggi comunque tutti i prezzi di tutte le offerte: non saltare mai la verifica (i prezzi cambiano durante il giorno).
+
 2. **Ricerca.** Cerca sul web (WebSearch, modalità extended per i prezzi) prodotti nuovi o in offerta adatti al brief,
    e il prezzo di oggi di ognuno dei 10 attuali sui quattro negozi.
 3. **Prezzi.** Aggiorna `offers`. `fresh: true` solo se il prezzo l'hai letto oggi **sulla pagina prodotto del negozio**,
