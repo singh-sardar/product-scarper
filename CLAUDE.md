@@ -11,8 +11,8 @@ confrontando i prezzi di Amazon, Unieuro, MediaWorld ed Euronics.
 - `<categoria>/BRIEF.md`: per chi è la ricerca, budget, criteri di scelta, cosa controllare sui modelli. **Leggilo prima di toccare la categoria.**
 - `scripts/gallerie.py`, `scripts/storico.py`: lavorano su qualsiasi `<categoria>/index.html` passato come argomento.
 
-Categorie attive: `orologi/`, `asciugatrici/`, `robot-lavapavimenti/`, `smartwatch-donna/`, `termostato/`.
-Archiviate (acquisto fatto, niente job): `orologi-donna/`, elencate in `archivio/index.html` e in `ARCHIVED` di `shared/dashboard.js`. Per archiviare una ricerca: toglila da `CATS`, aggiungila a `ARCHIVED` e all'Archivio, elimina il suo job.
+Categorie attive: `asciugatrici/`, `robot-lavapavimenti/`, `smartwatch-donna/`, `termostato/`.
+Archiviate (concluse, niente job): `orologi-donna/`, `orologi/`, elencate in `archivio/index.html` e in `ARCHIVED` di `shared/dashboard.js`. Per archiviare una ricerca: toglila da `CATS`, aggiungila a `ARCHIVED` e all'Archivio, elimina il suo job.
 
 Formato di un prodotto in `W` (mantieni l'ordine `id, photo, photoSrc` all'inizio: lo usa `gallerie.py`;
 `id` solo lettere minuscole e cifre, senza trattini, perché diventa una chiave di `GALLERY` e `HISTORY`):

@@ -9,9 +9,9 @@
 (function () {
   function buildNav() {
     // Schede in cima a ogni ricerca: per una nuova categoria aggiungi qui [cartella, etichetta].
-    var CATS = [["orologi", "Smartwatch tondi"], ["asciugatrici", "Asciugatrici"], ["robot-lavapavimenti", "Robot lavapavimenti"], ["smartwatch-donna", "Smartwatch donna"], ["termostato", "Termostato smart"]];
+    var CATS = [["asciugatrici", "Asciugatrici"], ["robot-lavapavimenti", "Robot lavapavimenti"], ["smartwatch-donna", "Smartwatch donna"], ["termostato", "Termostato smart"]];
     // Ricerche concluse: restano consultabili dalla scheda Archivio (elenco in archivio/index.html).
-    var ARCHIVED = ["orologi-donna"];
+    var ARCHIVED = ["orologi-donna", "orologi"];
     var nav = document.createElement("nav");
     nav.className = "tabs"; nav.setAttribute("aria-label", "Ricerche");
     CATS.concat([["archivio", "Archivio"]]).forEach(function (c) {
