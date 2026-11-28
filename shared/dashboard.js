@@ -7,6 +7,22 @@
 //   stores: "any"                                // facoltativo: negozi liberi invece dei quattro fissi
 // }
 (function () {
+  function buildNav() {
+    // Schede in cima a ogni ricerca: per una nuova categoria aggiungi qui [cartella, etichetta].
+    var CATS = [["orologi", "Smartwatch tondi"], ["asciugatrici", "Asciugatrici"], ["robot-lavapavimenti", "Robot lavapavimenti"], ["smartwatch-donna", "Smartwatch donna"], ["termostato", "Termostato smart"]];
+    // Ricerche concluse: restano consultabili dalla scheda Archivio (elenco in archivio/index.html).
+    var ARCHIVED = ["orologi-donna"];
+    var nav = document.createElement("nav");
+    nav.className = "tabs"; nav.setAttribute("aria-label", "Ricerche");
+    CATS.concat([["archivio", "Archivio"]]).forEach(function (c) {
+      var a = document.createElement("a");
+      a.href = "../" + c[0] + "/index.html"; a.textContent = c[1];
+      if (location.pathname.indexOf("/" + c[0] + "/") >= 0 || (c[0] === "archivio" && ARCHIVED.some(function (d) { return location.pathname.indexOf("/" + d + "/") >= 0; }))) a.setAttribute("aria-current", "page");
+      nav.appendChild(a);
+    });
+    document.querySelector(".wrap").prepend(nav);
+  }
+  if (typeof CONFIG === "undefined") { buildNav(); return; } // pagina senza dati (Archivio): solo le schede
   var C = CONFIG;
   var TODAY = new Date().toLocaleDateString("sv"); // AAAA-MM-GG, ora locale
   var STORES = ["Amazon", "Unieuro", "MediaWorld", "Euronics"];
@@ -45,17 +61,7 @@
     '<div class="cmpbar"><button type="button" class="clear" id="cmp-clear">Svuota la selezione</button><span class="store" id="cmp-count"></span></div>' +
     '<div class="cmpwrap" id="cmp"></div></section>';
 
-  // Schede in cima a ogni ricerca: per una nuova categoria aggiungi qui [cartella, etichetta].
-  var CATS = [["orologi", "Smartwatch tondi"], ["asciugatrici", "Asciugatrici"], ["robot-lavapavimenti", "Robot lavapavimenti"], ["orologi-donna", "Orologi dorati ragazza"], ["smartwatch-donna", "Smartwatch donna"]];
-  var nav = document.createElement("nav");
-  nav.className = "tabs"; nav.setAttribute("aria-label", "Ricerche");
-  CATS.forEach(function (c) {
-    var a = document.createElement("a");
-    a.href = "../" + c[0] + "/index.html"; a.textContent = c[1];
-    if (location.pathname.indexOf("/" + c[0] + "/") >= 0) a.setAttribute("aria-current", "page");
-    nav.appendChild(a);
-  });
-  document.querySelector(".wrap").prepend(nav);
+  buildNav();
 
   // Zoom che segue il mouse dentro un riquadro (solo con mouse: su touch non c'è hover).
   var canHover = window.matchMedia("(hover: hover)").matches;

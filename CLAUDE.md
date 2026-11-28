@@ -11,7 +11,8 @@ confrontando i prezzi di Amazon, Unieuro, MediaWorld ed Euronics.
 - `<categoria>/BRIEF.md`: per chi è la ricerca, budget, criteri di scelta, cosa controllare sui modelli. **Leggilo prima di toccare la categoria.**
 - `scripts/gallerie.py`, `scripts/storico.py`: lavorano su qualsiasi `<categoria>/index.html` passato come argomento.
 
-Categorie: `orologi/`, `asciugatrici/`, `robot-lavapavimenti/`, `orologi-donna/`, `smartwatch-donna/`.
+Categorie attive: `orologi/`, `asciugatrici/`, `robot-lavapavimenti/`, `smartwatch-donna/`, `termostato/`.
+Archiviate (acquisto fatto, niente job): `orologi-donna/`, elencate in `archivio/index.html` e in `ARCHIVED` di `shared/dashboard.js`. Per archiviare una ricerca: toglila da `CATS`, aggiungila a `ARCHIVED` e all'Archivio, elimina il suo job.
 
 Formato di un prodotto in `W` (mantieni l'ordine `id, photo, photoSrc` all'inizio: lo usa `gallerie.py`;
 `id` solo lettere minuscole e cifre, senza trattini, perché diventa una chiave di `GALLERY` e `HISTORY`):
@@ -24,9 +25,9 @@ aperte come file, nel browser integrato non caricano `shared/`.
 
 ## Quando l'utente chiede "aggiorna i dati" di una categoria
 
-1. **Brief.** Leggi `<categoria>/BRIEF.md`.
 **Rilettura sempre completa.** Anche se `UPDATED` o `fresh: true` hanno già la data di oggi, rileggi comunque tutti i prezzi di tutte le offerte: non saltare mai la verifica (i prezzi cambiano durante il giorno).
 
+1. **Brief.** Leggi `<categoria>/BRIEF.md`.
 2. **Ricerca.** Cerca sul web (WebSearch, modalità extended per i prezzi) prodotti nuovi o in offerta adatti al brief,
    e il prezzo di oggi di ognuno dei 10 attuali sui quattro negozi.
 3. **Prezzi.** Aggiorna `offers`. `fresh: true` solo se il prezzo l'hai letto oggi **sulla pagina prodotto del negozio**,
